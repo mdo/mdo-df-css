@@ -1,0 +1,176 @@
+/*
+  Readable Daring Fireball User Style
+  Author: @mdo
+  Description: Improves contrast and readability of DF without removing the ads.
+*/
+
+/*
+Structure:
+  div#Box (site container)
+    div#Banner (masthead)
+    div#Sidebar (nav and ads)
+    div#Main (main content)
+      dl.linkedlist
+      h2.dateline
+      hr.ookiaks
+      div.article
+        h1
+        h6.dateline
+        p
+        blockquote
+          p
+*/
+
+
+/* Helvetica Neue it! */
+* {
+  font-family: Helvetica Neue, sans-serif !important;
+}
+
+/* Background change and font-size bump */
+body {
+  background: #fff !important;
+  margin-top: 40px;
+  color: #333 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+}
+
+/* Links to blue! */
+a {
+  color: #2276BB !important;
+  font-weight: bold;
+  border-color: rgba(0,0,0,.2) !important;
+}
+a:hover {
+  background: #eee !important;
+}
+
+/* Clean up the text colors and headings */
+h1,
+h2,
+h3,
+h4,
+.linkedlist p,
+.article p,
+.article li {
+  color: #333 !important;
+}
+.linkedlist blockquote,
+.article blockquote {
+  border-left-color: #ccc;
+}
+.linkedlist blockquote p,
+.article blockquote p {
+  color: #777 !important;
+}
+
+/* Paragraph line height bump */
+p,
+.article p {
+  line-height: 20px !important;
+}
+
+/* Code Snippets */
+code, pre {
+  font-family: "Monaco", monospace !important;
+  color: #555 !important;
+}
+  pre {
+    background: #eee;
+    border-color: #ccc;
+    padding: 10px;
+  }
+  code {
+  }
+  
+/* Remove top margin from all img elements */
+img {
+  margin-top: 0;
+}
+
+/* Remove left margin on dd */
+dl.linkedlist dd {
+  margin-left: 0;
+}
+
+/* Site Container */
+div#Box {
+  width: 550px !important;
+}
+
+  /* Masthead */
+  div#Banner {
+    margin: 0 !important;
+  }
+    /* Modify the logo */
+    div#Banner a img {
+      background: #333 !important;
+      padding-top: 3px;
+      padding-right: 5px;
+      -webkit-border-radius: 5px;
+    }
+    /* Hide shirts promo */
+    div#BannerPromo {
+      display: none;
+    }
+
+  /* Nix the sidebar and widen the main column */
+  div#Sidebar {
+  }
+    /* Hide everything in the sidebar but the ads */
+    div#Sidebar p,
+    div#Sidebar ul {
+      display: none;
+    }
+    div#SidebarTheDeck * {
+      border: 0 !important;
+      padding: 0;
+    }
+    /* Move the ads, because ads are revenue and revenue is nice */
+    div#SidebarTheDeck {
+      position: fixed;
+      bottom: 15px;
+      left: 20px;
+      width: 160px;
+      margin: 0;
+    }
+      div#SidebarTheDeck a {
+        border: 0;
+      }
+      div#SidebarTheDeck img {
+        display: block;
+        margin-bottom: 5px;
+      }
+      div#SidebarTheDeck p.ads {
+        display: block;
+        margin: 0;
+        color: #333;
+        text-align: left;
+      }
+      div#SidebarTheDeck img.the_deck_promo {
+        margin-top: 0;
+      }
+
+  /* Reposition the main column */
+  div#Main {
+    margin: 50px 0 0 !important;
+    width: auto !important;
+  }
+
+/* Clean up tabs on project pages (e.g., Markdown) */
+ul#ProjectSubmenu {
+
+}
+  ul#ProjectSubmenu li {
+
+  }
+  ul#ProjectSubmenu li a {
+    border-color: #ccc !important;
+  }
+  ul#ProjectSubmenu li a.selected,
+  ul#ProjectSubmenu li a.selected:hover {
+    background: #606870 !important;
+    border-color: #606870 !important;
+    color: #fff !important;
+  }
