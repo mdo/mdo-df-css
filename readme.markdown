@@ -1,6 +1,8 @@
 # Readable Daring Fireball User Style
 Improves contrast and readability of DF without removing the ads with a user style.
 
+![Preview](screenshot.png)
+
 ## Notes
 Feedback, comments, and bugs can be sent to [hi@markdotto.com][1]. You can also reach me on Twitter @[mdo][2].
 
