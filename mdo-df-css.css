@@ -1,27 +1,3 @@
-/*
-  Readable Daring Fireball User Style
-  Author: @mdo
-  Description: Improves contrast and readability of DF without removing the ads.
-*/
-
-/*
-Structure:
-  div#Box (site container)
-    div#Banner (masthead)
-    div#Sidebar (nav and ads)
-    div#Main (main content)
-      dl.linkedlist
-      h2.dateline
-      hr.ookiaks
-      div.article
-        h1
-        h6.dateline
-        p
-        blockquote
-          p
-*/
-
-
 /* Helvetica Neue it! */
 * {
   font-family: Helvetica Neue, sans-serif !important;
@@ -83,7 +59,7 @@ code, pre {
   }
   code {
   }
-  
+
 /* Remove top margin from all img elements */
 img {
   margin-top: 0;
