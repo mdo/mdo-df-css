@@ -1,25 +1,34 @@
+/* 
+ * Simple Daring Fireball userstyle
+ * Invert the color scheme and increase the font-size for readibility.
+ *
+ * Created and maintained by @mdo * https://github.com/mdo/mdo-df-css
+ */
+
+
 /* Helvetica Neue it! */
 * {
-  font-family: Helvetica Neue, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, sans-serif !important;
 }
 
 /* Background change and font-size bump */
 body {
   background: #fff !important;
-  margin-top: 40px;
+  padding: 40px !important;
   color: #333 !important;
-  font-size: 13px !important;
-  line-height: 20px !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  min-width: auto;
 }
 
 /* Links to blue! */
 a {
-  color: #2276BB !important;
-  font-weight: bold;
+  color: #2276bb !important;
+  font-weight: 500;
   border-color: rgba(0,0,0,.2) !important;
 }
 a:hover {
-  background: #eee !important;
+  background-color: #eee !important;
 }
 
 /* Clean up the text colors and headings */
@@ -35,6 +44,7 @@ h4,
 .linkedlist blockquote,
 .article blockquote {
   border-left-color: #ccc;
+  margin-right: 0 !important;
 }
 .linkedlist blockquote p,
 .article blockquote p {
@@ -44,7 +54,7 @@ h4,
 /* Paragraph line height bump */
 p,
 .article p {
-  line-height: 20px !important;
+  line-height: 1.5 !important;
 }
 
 /* Code Snippets */
@@ -72,7 +82,8 @@ dl.linkedlist dd {
 
 /* Site Container */
 div#Box {
-  width: 550px !important;
+  width: auto !important;
+  max-width: 660px !important;
 }
 
   /* Masthead */
@@ -80,11 +91,21 @@ div#Box {
     margin: 0 !important;
   }
     /* Modify the logo */
+  div#Banner a {
+    display: block;
+    width: 240px;
+    height: 56px;
+    margin-left: -14px;
+    background: url("http://daringfireball.net/graphics/logos-alt/df_double_reverse.png") no-repeat 0 0;
+    background-size: 240px 56px;
+  }
+  div#Banner a:hover {
+    background-color: transparent !important;
+    opacity: .8;
+  }
+
     div#Banner a img {
-      background: #333 !important;
-      padding-top: 3px;
-      padding-right: 5px;
-      -webkit-border-radius: 5px;
+      display: none;
     }
     /* Hide shirts promo */
     div#BannerPromo {
@@ -95,8 +116,8 @@ div#Box {
   div#Sidebar {
   }
     /* Hide everything in the sidebar but the ads */
-    div#Sidebar p,
-    div#Sidebar ul {
+    div#Sidebar > p,
+    div#Sidebar > ul {
       display: none;
     }
     div#SidebarTheDeck * {
@@ -108,24 +129,29 @@ div#Box {
       position: fixed;
       bottom: 15px;
       left: 20px;
-      width: 160px;
-      margin: 0;
+      width: 120px;
+      margin: 0 !important;
+      line-height: 1 !important;
     }
       div#SidebarTheDeck a {
         border: 0;
       }
-      div#SidebarTheDeck img {
-        display: block;
-        margin-bottom: 5px;
+      div#SidebarTheDeck img.ad {
+        display: block !important;
+        margin: 0 0 5px !important;
       }
-      div#SidebarTheDeck p.ads {
+      div#SidebarTheDeck p {
         display: block;
-        margin: 0;
-        color: #333;
+        width: auto !important;
+        margin: 0 !important;
+        color: #333 !important;
         text-align: left;
       }
       div#SidebarTheDeck img.the_deck_promo {
         margin-top: 0;
+      }
+      div#SidebarTheDeck p#ViaTheDeck img {
+        display: none;
       }
 
   /* Reposition the main column */
