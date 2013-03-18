@@ -79,6 +79,9 @@ img {
 dl.linkedlist dd {
   margin-left: 0;
 }
+dl.linkedlist dd ul li {
+  color: #333 !important;
+}
 
 /* Site Container */
 div#Box {
