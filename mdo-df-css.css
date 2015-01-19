@@ -77,6 +77,10 @@ img {
 }
 
 /* Remove left margin on dd */
+dl.linkedlist dt {
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
 dl.linkedlist dd {
   margin-left: 0;
 }
