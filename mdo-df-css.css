@@ -17,7 +17,7 @@ body {
   padding: 40px !important;
   color: #333 !important;
   font-size: 16px !important;
-  line-height: 1.5 !important;
+  line-height: 1.75 !important;
   min-width: auto;
 }
 
@@ -52,12 +52,6 @@ h4,
   color: #777 !important;
 }
 
-/* Paragraph line height bump */
-p,
-.article p {
-  line-height: 1.5 !important;
-}
-
 /* Code Snippets */
 code, pre {
   font-family: "Monaco", monospace !important;
@@ -76,11 +70,13 @@ img {
   margin-top: 0;
 }
 
-/* Remove left margin on dd */
+/* Heading spacing */
 dl.linkedlist dt {
   text-transform: none !important;
   letter-spacing: 0 !important;
 }
+
+/* Remove left margin on dd */
 dl.linkedlist dd {
   margin-left: 0;
 }
@@ -91,7 +87,7 @@ dl.linkedlist dd ul li {
 /* Site Container */
 div#Box {
   width: auto !important;
-  max-width: 660px !important;
+  max-width: 600px !important;
 }
 
   /* Masthead */
@@ -184,3 +180,4 @@ ul#ProjectSubmenu {
     border-color: #606870 !important;
     color: #fff !important;
   }
+  
